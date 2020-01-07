@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Accessor</title>
+        <script>
+                var student={
+                    _name:'',
+                    set name(_name){
+                    this._name=_name;
+                    console.log('setter');
+                },
+                get name(){
+                    console.log('getter');
+                    return this._name;
+                }
+                };
+           student.name='amit';
+           console.log(student._name);
+        
+        
+        </script>
+    </head>
+</html>

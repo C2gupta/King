@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>hasOwn property</title>
+    </head>
+    <script>
+             var product={
+                 name:'mobile',
+                 price:1200
+             };
+             console.log(product);
+             console.log('name' in product);               //true
+             console.log('toString' in product);           //true
+             console.log(product.hasOwnProperty('name'));      //true
+            console.log(product.hasOwnProperty('toString'));       //false    
+    </script>
+</html>
